@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Website percobaan pertama saya di Vercel">
+  <title>Website Pertamaku</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#beranda" class="logo">MyWeb</a>
+      <nav>
+        <a href="#beranda">Beranda</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#coba">Coba</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="beranda" class="hero">
+      <div class="container">
+        <h1>Halo, ini website pertamaku! 👋</h1>
+        <p>Dibuat dengan HTML, CSS, dan JavaScript, lalu dipublikasikan lewat Vercel.</p>
+        <a href="#coba" class="btn">Coba Fitur Interaktif</a>
+      </div>
+    </section>
+
+    <section id="tentang" class="section">
+      <div class="container">
+        <h2>Tentang Website Ini</h2>
+        <p class="lead">Halaman ini dibuat untuk belajar proses membuat website sampai bisa diakses publik.</p>
+        <div class="cards">
+          <div class="card">
+            <h3>⚡ Cepat</h3>
+            <p>Website statis dimuat sangat cepat karena tidak butuh server atau database.</p>
+          </div>
+          <div class="card">
+            <h3>🔒 Aman</h3>
+            <p>Vercel menyediakan HTTPS otomatis, jadi tidak perlu mengurus SSL sendiri.</p>
+          </div>
+          <div class="card">
+            <h3>🌍 Online</h3>
+            <p>Setelah deploy, kamu mendapat link publik yang bisa dibagikan ke siapa saja.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="coba" class="section alt">
+      <div class="container">
+        <h2>Coba Fitur Interaktif</h2>
+
+        <div class="demo">
+          <h3>Penghitung Klik</h3>
+          <p class="counter" id="counter">0</p>
+          <div class="row">
+            <button class="btn small" id="btn-plus">+ Tambah</button>
+            <button class="btn small outline" id="btn-reset">Reset</button>
+          </div>
+        </div>
+
+        <div class="demo">
+          <h3>Sapaan Personal</h3>
+          <div class="row">
+            <input type="text" id="nama" placeholder="Ketik namamu...">
+            <button class="btn small" id="btn-sapa">Sapa Saya</button>
+          </div>
+          <p id="sapaan" class="greeting"></p>
+        </div>
+
+        <div class="demo">
+          <h3>Mode Gelap</h3>
+          <button class="btn small outline" id="btn-tema">🌙 Ganti Tema</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontak" class="section">
+      <div class="container">
+        <h2>Kontak</h2>
+        <p class="lead">Ganti info di bawah ini dengan data kamu sendiri.</p>
+        <ul class="contact">
+          <li>📧 email@contoh.com</li>
+          <li>📱 +62 812-3456-7890</li>
+          <li>📍 Jakarta, Indonesia</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="tahun"></span> MyWeb. Dibuat dengan semangat belajar.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
